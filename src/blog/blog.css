@@ -1,0 +1,20 @@
+h1 {
+  color: red;
+}
+
+body {
+  background-image: url(NYC.jpeg);
+  background-repeat: no-repeat;
+  background-size: 1400px 800px;
+  width: 5vw;
+  height: 5vh;
+}
+
+div {
+  text-align: center;
+}
+
+h2 {
+  color: purple;
+  text-align: center;
+}
