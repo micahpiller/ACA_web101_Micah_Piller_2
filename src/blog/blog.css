@@ -1,20 +1,19 @@
-h1 {
-  color: red;
+* {
+  border: 1px solid black;
 }
 
 body {
   background-image: url(https://wallpaperaccess.com/full/51785.jpg);
   background-repeat: no-repeat;
-  background-size: 1400px 800px;
-  width: 5vw;
-  height: 5vh;
-}
-
-ul {
-  text-align: center;
+  background-size: 1600px 1000px;
+  width: 100vw;
+  height: 100vh;
 }
 
 h2 {
-  color: purple;
-  text-align: center;
+  color: greenyellow;
+}
+
+h1 {
+  color: red;
 }
