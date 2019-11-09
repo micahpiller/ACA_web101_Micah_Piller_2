@@ -4,6 +4,7 @@
 
 body {
   display: flex;
+  padding-top: 15px;
 }
 
 main {
@@ -12,36 +13,35 @@ main {
 }
 
 main li {
-  padding: 2px;
+  padding: 0.18em;
 }
 
-/* used to increase font size and stretch MICAH PILLER across the top*/
+/* section,
+main,
+aside {
+  border: 1px solid black;
+} */
+
+/* used to increase font size and stretch MICAH PILLER across the top || also used to reduce line spacing between MICAH PILLER and BUSINESS OPERATIONS */
 h1 {
   letter-spacing: 5px;
   font-size: 4em;
+  margin: 0;
 }
 
-h1,
 h3 {
   text-transform: uppercase;
 }
 
-/* used to reduce line spacing between MICAH PILLER and BUSINESS OPERATIONS */
-h1,
-h3:not(.text-black) {
-  padding: 0;
-  margin: 0;
+/* used to close space above BUSINESS OPERATIONS and increase space below  */
+h3.business-operations {
+  padding-bottom: 0.75em;
+  margin-top: 0.2em;
 }
 
 h3:not(.text-black) {
   color: cornflowerblue;
 }
-
-/* trying to add padding-top to the the first <p> in first <section> nested in <main> */
-/* section > p {
-  color: purple;
-  padding-top: 20px;
-} */
 
 .text-black {
   padding-top: 20px;
@@ -51,10 +51,15 @@ span {
   font-weight: bold;
 }
 
+h1 > span {
+  font-weight: 500;
+}
+
 .work-experience > h4 {
   text-transform: uppercase;
   color: cornflowerblue;
   margin: 0;
+  padding-bottom: 0.25em;
 }
 
 .work-experience > h5 {
@@ -78,7 +83,7 @@ aside {
 
 /* used to create spacing between <li> elements nested in <aside> (i.e. <li>'s below SKILLS & HIGHLIGHTS) */
 aside li {
-  padding: 6pt;
+  padding: 0.25em;
 }
 
 aside ul {
@@ -94,7 +99,18 @@ aside ul {
   margin-right: 3em;
 }
 
-/* used to reduce line spacing between the 2 address lines. <p>469.877.3065</p> is excluded. Source: https://css-tricks.com/useful-nth-child-recipies/ */
+/* used to reduce line spacing between the 2 address lines. <p>469.877.3065</p> is excluded. Source: https://css-tricks.com/useful-nth-child-recipies/ here is how :nth-child() pseudo selector works https://css-tricks.com/how-nth-child-works/*/
 ul > p:nth-child(-n + 2) {
-  line-height: 4px;
+  line-height: 3px;
+}
+
+/* used to close the space between email address and mailing address  */
+.address-box > a {
+  margin-bottom: -1em;
+  color: cornflowerblue;
+}
+
+h3.highlights,
+h3.education {
+  padding-top: 1em;
 }
